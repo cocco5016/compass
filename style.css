@@ -24,9 +24,41 @@ header{
   border-bottom:1px solid var(--line);
 }
 .brand{font-size:42px;font-weight:800;letter-spacing:.02em;line-height:1}
-.group{margin-top:10px;font-size:18px;font-weight:700}
-.catch{margin:24px 0 0;font-size:clamp(26px,7vw,38px);font-weight:800;line-height:1.45}
-.lead{max-width:560px;margin:14px auto 0;font-size:17px;color:#475467}
+.sub-title{
+
+font-size:18px;
+
+font-weight:700;
+
+color:#17324d;
+
+margin-top:10px;
+
+}
+
+.hero{
+
+font-size:46px;
+
+font-weight:900;
+
+line-height:1.25;
+
+margin:25px 0 10px;
+
+}
+
+.hero-text{
+
+font-size:18px;
+
+color:#666;
+
+max-width:520px;
+
+margin:auto;
+
+}
 main{padding:26px 0 56px}
 .card{
   background:var(--card);
