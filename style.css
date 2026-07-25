@@ -528,3 +528,126 @@
     font-size: 25px;
   }
 }
+
+/* ===== 入口・メンバー・リーダー分離 ===== */
+.entrance-body, .login-body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 50% -10%, rgba(200,155,60,.18), transparent 34%),
+    linear-gradient(160deg, #f9f8f4 0%, #eef2f5 100%);
+}
+.entrance, .login-page {
+  width: min(100% - 30px, 760px);
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 48px 0;
+  display: grid;
+  align-content: center;
+  gap: 30px;
+}
+.entrance-brand { text-align: center; }
+.entrance-logo { width: min(380px, 84vw); max-height: 145px; object-fit: contain; }
+.entrance-slogan { margin: 14px 0 2px; color: var(--navy); font-size: 19px; font-weight: 800; letter-spacing: .09em; }
+.entrance-description { margin: 0; color: var(--muted); font-size: 12px; letter-spacing: .1em; }
+.entrance-panel, .login-card {
+  padding: 31px;
+  background: rgba(255,255,255,.92);
+  border: 1px solid rgba(16,42,67,.07);
+  border-radius: 25px;
+  box-shadow: 0 25px 70px rgba(16,42,67,.13);
+}
+.entrance-panel > h1, .login-card h1 { margin: 0; color: var(--navy); font-size: clamp(27px,7vw,36px); }
+.entrance-help { margin: 7px 0 22px; color: var(--muted); font-size: 13px; }
+.entrance-grid { display: grid; gap: 13px; }
+.entrance-card {
+  display: grid; grid-template-columns: 54px 1fr 20px; align-items: center; gap: 15px;
+  padding: 20px; border-radius: 17px; transition: transform .2s ease;
+}
+.entrance-card:hover { transform: translateY(-3px); }
+.member-entry { background: var(--navy); color: #fff; }
+.leader-entry { background: linear-gradient(135deg,#d5ac50,#ad7e24); color: #fff; }
+.entrance-icon {
+  display: grid; place-items: center; width: 50px; height: 50px;
+  background: rgba(255,255,255,.15); border: 1px solid rgba(255,255,255,.22);
+  border-radius: 50%; font-size: 17px; font-weight: 900;
+}
+.entry-label, .entrance-card strong, .entrance-card small { display:block; }
+.entry-label { font-size: 10px; font-weight: 800; letter-spacing: .12em; opacity:.72; }
+.entrance-card strong { font-size: 20px; }
+.entrance-card small { margin-top:2px; opacity:.68; font-size:11px; }
+.entry-arrow { font-size:29px; }
+.entrance-note { margin:17px 0 0; text-align:center; color:var(--muted); font-size:11px; }
+
+.home-news-grid { display:grid; gap:13px; }
+.home-news-card {
+  display:block; padding:22px; background:#fff; border-radius:17px;
+  border:1px solid rgba(16,42,67,.06); box-shadow:var(--shadow); transition:transform .2s ease;
+}
+.home-news-card:hover { transform:translateY(-3px); }
+.home-news-card h3 { margin:10px 0 5px; color:var(--navy); font-size:18px; }
+.home-news-card p { margin:0; color:var(--muted); font-size:13px; }
+
+.login-logo { display:block; width:min(300px,75vw); max-height:115px; object-fit:contain; margin:0 auto; }
+.login-card { max-width:520px; width:100%; margin:0 auto; text-align:center; }
+.lock-mark, .leader-only-badge {
+  display:inline-grid; place-items:center; background:var(--gold); color:#fff;
+  font-weight:900; border-radius:999px;
+}
+.lock-mark { width:50px; height:50px; margin-bottom:14px; font-size:18px; }
+.login-card > p:not(.eyebrow) { color:var(--muted); font-size:13px; }
+.login-card form { margin-top:23px; text-align:left; }
+.login-card label { display:block; margin-bottom:7px; color:var(--navy); font-size:12px; font-weight:800; }
+.login-card input {
+  width:100%; padding:15px 16px; border:1px solid #ccd5dd; border-radius:11px;
+  font:inherit; font-size:18px; letter-spacing:.15em; outline:none;
+}
+.login-card input:focus { border-color:var(--gold); box-shadow:0 0 0 3px rgba(200,155,60,.15); }
+.login-card button {
+  width:100%; margin-top:13px; padding:15px; border:0; border-radius:11px;
+  background:var(--navy); color:#fff; font:inherit; font-weight:800; cursor:pointer;
+}
+.login-error { min-height:22px; margin:8px 0 0!important; color:#b12626!important; }
+.member-back-link { display:inline-block; margin-top:14px; color:var(--navy); font-size:12px; font-weight:700; }
+
+.leader-header { background:#fff; border-top:6px solid var(--gold); }
+.leader-only-badge { padding:5px 12px; margin-top:12px; font-size:10px; letter-spacing:.12em; }
+.leader-priority {
+  padding:27px; background:linear-gradient(145deg,#102a43,#1f4668); color:#fff;
+  border-radius:22px; box-shadow:0 22px 55px rgba(16,42,67,.23);
+}
+.leader-meeting-layout { display:grid; grid-template-columns:75px 1fr; gap:18px; align-items:center; }
+.leader-priority h1 { margin:0; font-size:clamp(23px,6vw,32px); }
+.leader-priority p { margin:5px 0; color:rgba(255,255,255,.72); }
+.audience-label { display:inline-block; margin-top:5px; padding:3px 9px; background:var(--gold); border-radius:999px; font-size:10px; font-weight:800; }
+.leader-main-button {
+  display:block; margin-top:20px; padding:14px; background:#fff; color:var(--navy);
+  border-radius:11px; text-align:center; font-size:13px; font-weight:900;
+}
+.leader-guide { margin:-4px 0 15px; color:var(--muted); font-size:13px; }
+.leader-menu-card { border-color:rgba(200,155,60,.5); background:#fffaf0; }
+.footer-entry-link { display:block; margin-bottom:16px; color:#fff; font-size:12px; font-weight:800; }
+
+.article-image-section { padding:24px; border-bottom:1px solid var(--line); }
+.article-main-image { display:block; width:100%; height:auto; border-radius:13px; box-shadow:0 12px 30px rgba(16,42,67,.1); }
+.summary-grid { display:grid; gap:10px; }
+.summary-grid > div { padding:15px; background:var(--cream); border-radius:11px; }
+.summary-grid strong { color:var(--navy); }
+.summary-grid p { margin-top:4px; font-size:12px; }
+.external-form-button {
+  display:block; margin-top:18px; padding:15px; background:#fff; color:var(--navy);
+  border-radius:10px; text-align:center; font-size:14px; font-weight:900;
+}
+
+@media (min-width:660px) {
+  .entrance-grid, .home-news-grid { grid-template-columns:1fr 1fr; }
+  .leader-priority .schedule-date { min-height:80px; display:grid; align-content:center; }
+}
+@media (max-width:480px) {
+  .entrance, .login-page { padding:28px 0; }
+  .entrance-panel, .login-card { padding:23px 18px; border-radius:20px; }
+  .entrance-card { grid-template-columns:45px 1fr 15px; padding:17px 14px; gap:11px; }
+  .entrance-icon { width:42px; height:42px; }
+  .entrance-card strong { font-size:18px; }
+  .leader-priority { padding:21px 18px; }
+  .article-image-section { padding:15px; }
+}
