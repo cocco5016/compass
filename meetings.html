@@ -1,29 +1,45 @@
 <!doctype html>
 <html lang="ja">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>ミーティング｜compass</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102a43">
+  <title>ミーティング予定｜Compass</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-  <div class="container">
-    <div class="brand">🧭 compass</div>
-    <div class="group">西濱SDグループ</div>
-  </div>
-</header>
-<main class="container">
-  <a class="back" href="index.html">← トップへ戻る</a>
-  <h1 class="page-title">📅 ミーティング</h1>
-  
-<section class="card">
-  <h2>次回ミーティング</h2>
-  <p>現在、スケジュールを準備中です。</p>
-  <p class="meta">日時・Zoomリンク・対象者をここに掲載します。</p>
-</section>
+  <header class="sub-header">
+    <div class="sub-header-inner">
+      <a href="index.html"><img src="logo.png" alt="Compass" class="sub-logo"></a>
+      <p>迷わない、置いていかない。</p>
+    </div>
+  </header>
 
-</main>
-<footer><div class="container">compass｜西濱SDグループ</div></footer>
+  <main class="container meeting-page">
+    <a href="index.html" class="back-link">← トップへ戻る</a>
+
+    <section class="page-heading">
+      <p class="eyebrow">MEETING SCHEDULE</p>
+      <h1>ミーティング予定</h1>
+      <p>各予定の対象者を、ラベルで確認してください。</p>
+    </section>
+
+    <div class="audience-guide">
+      <span class="meeting-audience leader-audience">リーダー向け</span>
+      <span class="meeting-audience member-audience">一般会員向け</span>
+    </div>
+
+    <section class="meeting-empty-card">
+      <p class="eyebrow">NEXT SCHEDULE</p>
+      <h2>現在、次回予定を準備中です</h2>
+      <p>日時が決まり次第、対象者ラベルと一緒にここへ掲載します。</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <img src="logo.png" alt="" class="footer-logo">
+    <p>西濱SDグループ</p>
+    <small>© 2026 Compass</small>
+  </footer>
 </body>
 </html>

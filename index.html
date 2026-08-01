@@ -7,43 +7,96 @@
   <title>Compass｜西濱SDグループ</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="entrance-body">
-  <main class="entrance">
-    <div class="entrance-brand">
-      <img src="logo.png" alt="Compass 西濱SDグループ" class="entrance-logo">
-      <p class="entrance-slogan">迷わない、置いていかない。</p>
-      <p class="entrance-description">西濱SDグループ 情報サポートサイト</p>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html"><img src="logo.png" alt="Compass 西濱SDグループ" class="logo"></a>
+      <p class="brand-message">迷わない、置いていかない。</p>
+      <p class="site-description">西濱SDグループ 情報サポートサイト</p>
     </div>
+  </header>
 
-    <section class="entrance-panel">
-      <p class="eyebrow">SELECT YOUR ENTRANCE</p>
-      <h1>入口を選んでください</h1>
-      <p class="entrance-help">必要な情報だけを、分かりやすく表示します。</p>
-
-      <div class="entrance-grid">
-        <a href="member.html" class="entrance-card member-entry">
-          <span class="entrance-icon">人</span>
-          <div>
-            <span class="entry-label">一般メンバー</span>
-            <strong>メンバー入口</strong>
-            <small>全体のお知らせ・登録・商品情報</small>
-          </div>
-          <span class="entry-arrow">›</span>
-        </a>
-
-        <a href="leader-login.html" class="entrance-card leader-entry">
-          <span class="entrance-icon">L</span>
-          <div>
-            <span class="entry-label">リーダー専用</span>
-            <strong>リーダー入口</strong>
-            <small>リーダー会議・運営情報を含む</small>
-          </div>
-          <span class="entry-arrow">›</span>
-        </a>
+  <main class="container">
+    <section class="priority-card">
+      <div class="section-label">最優先</div>
+      <div class="priority-heading">
+        <div>
+          <p class="eyebrow">まず、ここを確認</p>
+          <h1>今やること</h1>
+        </div>
+        <span class="date-label">7月中に完了</span>
       </div>
 
-      <p class="entrance-note">リーダー入口にはパスワードが必要です。</p>
+      <div class="task-list">
+        <a href="article-registration.html" class="task-item task-urgent">
+          <span class="task-number">01</span>
+          <span class="task-content">
+            <strong>ESC代理店登録を7月中に完了する</strong>
+            <small>まだの方は、まずリーダーへ早めに連絡してください。</small>
+          </span>
+          <span class="arrow">›</span>
+        </a>
+        <a href="article-registration.html#zoom-support" class="task-item">
+          <span class="task-number">02</span>
+          <span class="task-content">
+            <strong>分からない方は登録説明Zoomへ参加</strong>
+            <small>リーダーと一緒に画面を確認しながら進めます。</small>
+          </span>
+          <span class="arrow">›</span>
+        </a>
+        <a href="article-sns-recruit.html" class="task-item">
+          <span class="task-number">03</span>
+          <span class="task-content">
+            <strong>SNSマーケティング部隊の募集を確認</strong>
+            <small>Googleフォームの締切は7月31日（金）です。</small>
+          </span>
+          <span class="arrow">›</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="latest-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">IMPORTANT NEWS</p>
+          <h2>重要なお知らせ</h2>
+        </div>
+        <a href="news.html" class="text-link">一覧を見る ›</a>
+      </div>
+
+      <div class="home-news-grid">
+        <a href="article-meeting-summary.html" class="home-news-card">
+          <div class="news-meta"><span class="new-badge">NEW</span><time>7月26日</time></div>
+          <h3>ESC全体MTG 議事録まとめ</h3>
+          <p>組織、情報共有、商品、報酬、今後のビジョンを確認してください。</p>
+          <span class="read-more">内容を確認する ›</span>
+        </a>
+
+        <a href="article-sns-recruit.html" class="home-news-card">
+          <div class="news-meta"><span class="new-badge">締切あり</span><time>7月31日まで</time></div>
+          <h3>SNSマーケティング部隊 募集</h3>
+          <p>SNS・AI・LP・動画・デザインなどの経験者を募集しています。</p>
+          <span class="read-more">募集内容を見る ›</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="menu-section">
+      <div class="section-heading">
+        <div><p class="eyebrow">NAVIGATION</p><h2>必要な情報を探す</h2></div>
+      </div>
+      <div class="menu-grid">
+        <a href="news.html" class="menu-card"><span class="menu-symbol">01</span><div><h3>お知らせ</h3><p>全体向け最新情報</p></div><span class="arrow">›</span></a>
+        <a href="article-registration.html" class="menu-card"><span class="menu-symbol">02</span><div><h3>ESC登録</h3><p>Zoom・個別対応の案内</p></div><span class="arrow">›</span></a>
+        <a href="meetings.html" class="menu-card"><span class="menu-symbol">03</span><div><h3>ミーティング予定</h3><p>対象者・日時を確認</p></div><span class="arrow">›</span></a>
+        <a href="support.html" class="menu-card"><span class="menu-symbol">04</span><div><h3>資料・FAQ</h3><p>資料一覧・よくある質問</p></div><span class="arrow">›</span></a>
+      </div>
     </section>
   </main>
+
+  <footer class="site-footer">
+    <img src="logo.png" alt="" class="footer-logo">
+    <p>西濱SDグループ</p><small>© 2026 Compass</small>
+  </footer>
 </body>
 </html>
