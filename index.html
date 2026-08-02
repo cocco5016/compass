@@ -16,87 +16,86 @@
     </div>
   </header>
 
-  <main class="container">
-    <section class="priority-card">
-      <div class="section-label">最優先</div>
-      <div class="priority-heading">
-        <div>
-          <p class="eyebrow">まず、ここを確認</p>
-          <h1>今やること</h1>
-        </div>
-        <span class="date-label">7月中に完了</span>
-      </div>
-
-      <div class="task-list">
-        <a href="article-registration.html" class="task-item task-urgent">
-          <span class="task-number">01</span>
-          <span class="task-content">
-            <strong>ESC代理店登録を7月中に完了する</strong>
-            <small>まだの方は、まずリーダーへ早めに連絡してください。</small>
-          </span>
-          <span class="arrow">›</span>
-        </a>
-        <a href="article-registration.html#zoom-support" class="task-item">
-          <span class="task-number">02</span>
-          <span class="task-content">
-            <strong>分からない方は登録説明Zoomへ参加</strong>
-            <small>リーダーと一緒に画面を確認しながら進めます。</small>
-          </span>
-          <span class="arrow">›</span>
-        </a>
-        <a href="article-sns-recruit.html" class="task-item">
-          <span class="task-number">03</span>
-          <span class="task-content">
-            <strong>SNSマーケティング部隊の募集を確認</strong>
-            <small>Googleフォームの締切は7月31日（金）です。</small>
-          </span>
-          <span class="arrow">›</span>
-        </a>
-      </div>
+  <main class="container portal-page">
+    <section class="portal-intro">
+      <p class="eyebrow">INFORMATION PORTAL</p>
+      <h1>確認したい情報を選んでください</h1>
+      <p>WOLFEとESCの情報を、タブで分けて掲載しています。</p>
     </section>
 
-    <section class="latest-section">
-      <div class="section-heading">
-        <div>
-          <p class="eyebrow">IMPORTANT NEWS</p>
-          <h2>重要なお知らせ</h2>
-        </div>
-        <a href="news.html" class="text-link">一覧を見る ›</a>
+    <div class="portal-tabs" role="tablist" aria-label="情報の種類">
+      <button class="portal-tab is-active" type="button" data-tab="wolfe" role="tab" aria-selected="true">WOLFEの情報</button>
+      <button class="portal-tab" type="button" data-tab="esc" role="tab" aria-selected="false">ESCの情報</button>
+    </div>
+
+    <section id="wolfe" class="tab-panel is-active" role="tabpanel">
+      <div class="section-heading portal-section-heading">
+        <div><p class="eyebrow">AUGUST 2026</p><h2>8月説明会・研修予定</h2></div>
+        <span class="schedule-updated">7月27日版</span>
       </div>
 
-      <div class="home-news-grid">
-        <a href="article-meeting-summary.html" class="home-news-card">
-          <div class="news-meta"><span class="new-badge">NEW</span><time>7月26日</time></div>
-          <h3>ESC全体MTG 議事録まとめ</h3>
-          <p>組織、情報共有、商品、報酬、今後のビジョンを確認してください。</p>
-          <span class="read-more">内容を確認する ›</span>
-        </a>
-
-        <a href="article-sns-recruit.html" class="home-news-card">
-          <div class="news-meta"><span class="new-badge">締切あり</span><time>7月31日まで</time></div>
-          <h3>SNSマーケティング部隊 募集</h3>
-          <p>SNS・AI・LP・動画・デザインなどの経験者を募集しています。</p>
-          <span class="read-more">募集内容を見る ›</span>
-        </a>
+      <div class="schedule-list">
+        <article class="event-card"><div class="event-date"><strong>1</strong><span>土</span></div><div><span class="area-tag kansai">大阪</span><h3>NLC新御堂ビル</h3><p>大阪市淀川区宮原5-1-24 601号室</p><small>スピーカー：千葉社長</small></div></article>
+        <article class="event-card"><div class="event-date"><strong>1</strong><span>土</span></div><div><span class="area-tag kyushu">鹿児島</span><h3>姶良市文化会館 加音ホール</h3><p>鹿児島県姶良市加治木町木田5348-185</p><small>スピーカー：椿</small></div></article>
+        <article class="event-card featured-event"><div class="event-date"><strong>2</strong><span>日</span></div><div><span class="area-tag tokai">静岡</span><h3>静岡ESC説明会</h3><p>静岡県コンベンションアーツセンター「グランシップ」<br>静岡市駿河区東静岡2-3-1</p><small>スピーカー：甲斐本部長／10:00〜12:00</small></div></article>
+        <article class="event-card"><div class="event-date"><strong>2</strong><span>日</span></div><div><span class="area-tag chugoku">広島</span><h3>RCC文化センター</h3><p>広島市中区橋本町5-11</p><small>スピーカー：千葉社長</small></div></article>
+        <article class="event-card"><div class="event-date"><strong>2</strong><span>日</span></div><div><span class="area-tag kyushu">宮崎</span><h3>都城市総合文化ホール</h3><p>宮崎県都城市北原町1106-100 ワークルーム</p><small>スピーカー：椿</small></div></article>
+        <article class="event-card"><div class="event-date"><strong>8</strong><span>土</span></div><div><span class="area-tag okinawa">沖縄</span><h3>浦添市産業振興センター 結の街</h3><p>沖縄県浦添市勢理客4-13-1</p><small>スピーカー：千葉社長</small></div></article>
+        <article class="event-card featured-event"><div class="event-date"><strong>9</strong><span>日</span></div><div><span class="area-tag okinawa">沖縄研修会</span><h3>レフ沖縄アリーナ</h3><p>沖縄県沖縄市諸見里1766 ベッセルホテル1F</p><small>サテライト研修会のみ</small></div></article>
+        <article class="event-card"><div class="event-date"><strong>9</strong><span>日</span></div><div><span class="area-tag kyushu">大牟田</span><h3>大牟田アリーナ</h3><p>大牟田市宝坂町2-92</p><small>スピーカー：甲斐本部長</small></div></article>
+        <article class="event-card"><div class="event-date"><strong>9</strong><span>日</span></div><div><span class="area-tag kyushu">大分</span><h3>クラサスドーム大分</h3><p>大分市横尾1351 B2F 204号</p><small>スピーカー：椿／会場決定</small></div></article>
+        <article class="event-card"><div class="event-date"><strong>11</strong><span>火</span></div><div><span class="area-tag hokuriku">石川</span><h3>石川県小松市團十郎芸術劇場うらら</h3><p>石川県小松市土居原町710</p><small>スピーカー：千葉社長</small></div></article>
+        <article class="event-card"><div class="event-date"><strong>16</strong><span>日</span></div><div><span class="area-tag kanto">東京</span><h3>ビジョンセンター市ヶ谷駅前</h3><p>東京都千代田区五番町4-2 東プレビル7F</p><small>スピーカー：千葉社長</small></div></article>
+        <article class="event-card"><div class="event-date"><strong>16</strong><span>日</span></div><div><span class="area-tag kyushu">佐世保</span><h3>佐世保市労働福祉センター</h3><p>佐世保市稲荷町2-28</p><small>スピーカー：椿</small></div></article>
+        <article class="event-card"><div class="event-date"><strong>22</strong><span>土</span></div><div><span class="area-tag kyushu">福岡</span><h3>福岡朝日ビル</h3><p>福岡市博多区博多駅前2-1-1 13・14号室</p><small>スピーカー：千葉社長</small></div></article>
+        <article class="event-card featured-event"><div class="event-date"><strong>23</strong><span>日</span></div><div><span class="area-tag kyushu">大牟田研修会</span><h3>大牟田エコサンクスセンター</h3><p>大牟田市健老町461 3階①②③</p><small>サテライト／10:00〜12:00</small></div></article>
+        <article class="event-card"><div class="event-date"><strong>23</strong><span>日</span></div><div><span class="area-tag kyushu">大牟田</span><h3>大牟田エコサンクスセンター</h3><p>大牟田市健老町461 3階①②③</p><small>千葉社長・甲斐本部長／コラボ説明会</small></div></article>
+        <article class="event-card"><div class="event-date"><strong>29</strong><span>土</span></div><div><span class="area-tag tokai">名古屋</span><h3>ウインクあいち</h3><p>名古屋市中村区名駅4-4-38 1104室</p><small>スピーカー：千葉社長</small></div></article>
+        <article class="event-card"><div class="event-date"><strong>30</strong><span>日</span></div><div><span class="area-tag kanto">東京</span><h3>ビジョンセンター市ヶ谷駅前</h3><p>東京都千代田区五番町4-2 東プレビル5F</p><small>スピーカー：千葉社長</small></div></article>
+        <article class="event-card"><div class="event-date"><strong>30</strong><span>日</span></div><div><span class="area-tag okinawa">沖縄</span><h3>沖縄コンベンションセンター B棟</h3><p>沖縄県宜野湾市真志喜4-3-1</p><small>スピーカー：甲斐本部長／会場変更</small></div></article>
+        <article class="event-card"><div class="event-date"><strong>30</strong><span>日</span></div><div><span class="area-tag kyushu">大分</span><h3>稙田公民館</h3><p>大分市玉沢789 大研修室</p><small>スピーカー：椿／会場決定</small></div></article>
       </div>
+
+      <section class="portal-news-block">
+        <div class="section-heading"><div><p class="eyebrow">WOLFE NEWS</p><h2>WOLFEのお知らせ</h2></div></div>
+        <a href="article-wolfe-okinawa.html" class="home-news-card notice-highlight">
+          <div class="news-meta"><span class="new-badge">申込締切 8/7</span><time>8月9日開催</time></div>
+          <h3>沖縄研修会・福岡サテライトのご案内</h3>
+          <p>10:00〜12:00／志免町町民センター「学習室A」</p>
+          <span class="read-more">申込方法を確認する ›</span>
+        </a>
+      </section>
     </section>
 
-    <section class="menu-section">
-      <div class="section-heading">
-        <div><p class="eyebrow">NAVIGATION</p><h2>必要な情報を探す</h2></div>
-      </div>
+    <section id="esc" class="tab-panel" role="tabpanel" hidden>
+      <div class="section-heading portal-section-heading"><div><p class="eyebrow">ESC INFORMATION</p><h2>ESCの情報</h2></div></div>
       <div class="menu-grid">
-        <a href="news.html" class="menu-card"><span class="menu-symbol">01</span><div><h3>お知らせ</h3><p>全体向け最新情報</p></div><span class="arrow">›</span></a>
-        <a href="article-registration.html" class="menu-card"><span class="menu-symbol">02</span><div><h3>ESC登録</h3><p>Zoom・個別対応の案内</p></div><span class="arrow">›</span></a>
-        <a href="meetings.html" class="menu-card"><span class="menu-symbol">03</span><div><h3>ミーティング予定</h3><p>対象者・日時を確認</p></div><span class="arrow">›</span></a>
-        <a href="support.html" class="menu-card"><span class="menu-symbol">04</span><div><h3>資料・FAQ</h3><p>資料一覧・よくある質問</p></div><span class="arrow">›</span></a>
+        <a href="meetings.html" class="menu-card"><span class="menu-symbol">01</span><div><h3>ミーティング予定</h3><p>開催日時と対象者を確認</p></div><span class="arrow">›</span></a>
+        <a href="news.html" class="menu-card"><span class="menu-symbol">02</span><div><h3>お知らせ・各種資料</h3><p>議事録、登録案内、募集資料など</p></div><span class="arrow">›</span></a>
       </div>
+      <section class="meeting-empty-card esc-preview">
+        <p class="eyebrow">NEXT SCHEDULE</p>
+        <h2>次回ミーティング予定</h2>
+        <p>現在、次回予定を準備中です。決まり次第、対象者と一緒に掲載します。</p>
+        <a href="meetings.html" class="inline-button">予定ページを見る</a>
+      </section>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <img src="logo.png" alt="" class="footer-logo">
-    <p>西濱SDグループ</p><small>© 2026 Compass</small>
-  </footer>
+  <footer class="site-footer"><img src="logo.png" alt="" class="footer-logo"><p>西濱SDグループ</p><small>© 2026 Compass</small></footer>
+
+  <script>
+    const tabs = document.querySelectorAll('.portal-tab');
+    const panels = document.querySelectorAll('.tab-panel');
+    tabs.forEach(tab => tab.addEventListener('click', () => {
+      tabs.forEach(item => { item.classList.remove('is-active'); item.setAttribute('aria-selected','false'); });
+      panels.forEach(panel => { panel.classList.remove('is-active'); panel.hidden = true; });
+      tab.classList.add('is-active');
+      tab.setAttribute('aria-selected','true');
+      const panel = document.getElementById(tab.dataset.tab);
+      panel.hidden = false;
+      panel.classList.add('is-active');
+    }));
+  </script>
 </body>
 </html>
