@@ -717,3 +717,20 @@
   .news-date{min-height:62px}
   .news-date strong{font-size:28px}
 }
+
+
+/* ===== ミーティング予定カード ===== */
+.wolfe-meeting-heading{margin-top:32px}
+.meeting-schedule-card{display:grid;grid-template-columns:82px 1fr;gap:18px;margin:0 0 30px;padding:22px;background:#fff;border:1px solid rgba(16,42,67,.08);border-radius:19px;box-shadow:var(--shadow)}
+.meeting-date-box{display:flex;min-height:82px;flex-direction:column;align-items:center;justify-content:center;background:var(--navy);color:#fff;border-radius:14px;line-height:1}
+.meeting-date-box strong{font-size:25px}.meeting-date-box span{margin-top:7px;font-size:12px;font-weight:800}
+.meeting-card-body h2,.meeting-card-body h3{margin:5px 0 12px;color:var(--navy);line-height:1.45}
+.meeting-card-body h3{font-size:20px}.meeting-card-body h2{font-size:24px}
+.meeting-kicker{margin:0;color:#9a6b08;font-size:12px;font-weight:900;letter-spacing:.04em}
+.meeting-details{margin:12px 0 0}.meeting-details>div{display:grid;grid-template-columns:115px 1fr;gap:12px;padding:10px 0;border-bottom:1px solid var(--line)}
+.meeting-details dt{color:var(--muted);font-size:12px;font-weight:800}.meeting-details dd{margin:0;color:var(--navy);font-size:14px;font-weight:800}
+.meeting-message{margin:14px 0 0;padding:13px 14px;background:var(--cream);border-radius:11px;color:#53616e;font-size:13px;line-height:1.7}
+.meeting-zoom-button{margin-top:15px}
+.meeting-card-labels{margin-bottom:8px}.meeting-note{margin-top:15px;padding:14px;background:#fff8e8;border:1px solid #ecd28c;border-radius:11px;color:#5f4a16}
+.meeting-note p{margin:5px 0 0;font-size:13px;line-height:1.7}.meeting-preview-top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}.meeting-preview-top h2{margin-top:5px}
+@media(max-width:560px){.meeting-schedule-card{grid-template-columns:1fr;padding:17px}.meeting-date-box{min-height:64px;flex-direction:row;gap:8px}.meeting-date-box span{margin-top:0}.meeting-details>div{grid-template-columns:1fr;gap:3px}.meeting-preview-top{display:block}.meeting-preview-top .meeting-audience{margin-top:8px}}
