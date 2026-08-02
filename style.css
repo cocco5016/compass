@@ -660,3 +660,60 @@
 
 /* ===== WOLFE / ESC ポータル ===== */
 .portal-intro{margin-bottom:24px}.portal-intro h1{margin:0;color:var(--navy);font-size:clamp(26px,6vw,38px);line-height:1.35}.portal-intro>p:last-child{margin:8px 0 0;color:var(--muted);font-size:14px}.portal-tabs{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:26px;padding:6px;background:#e9edf1;border-radius:16px;position:sticky;top:8px;z-index:10;box-shadow:0 8px 24px rgba(16,42,67,.09)}.portal-tab{appearance:none;border:0;padding:15px 10px;border-radius:12px;background:transparent;color:var(--muted);font:inherit;font-size:15px;font-weight:800;cursor:pointer}.portal-tab.is-active{background:var(--navy);color:#fff;box-shadow:0 7px 18px rgba(16,42,67,.22)}.tab-panel{animation:fadePanel .22s ease}.tab-panel[hidden]{display:none}@keyframes fadePanel{from{opacity:.3;transform:translateY(5px)}to{opacity:1;transform:none}}.portal-section-heading{align-items:center}.schedule-updated{color:var(--muted);font-size:11px}.schedule-list{display:grid;gap:11px}.event-card{display:grid;grid-template-columns:58px 1fr;gap:15px;padding:17px;background:#fff;border:1px solid rgba(16,42,67,.07);border-radius:16px;box-shadow:0 8px 25px rgba(16,42,67,.05)}.event-card.featured-event{border-left:5px solid var(--gold)}.event-date{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:63px;background:var(--navy);color:#fff;border-radius:12px;line-height:1}.event-date strong{font-size:25px}.event-date span{margin-top:6px;font-size:11px;font-weight:700}.event-card h3{margin:6px 0 3px;color:var(--navy);font-size:17px;line-height:1.4}.event-card p{margin:0;color:#53616e;font-size:12px;line-height:1.55}.event-card small{display:block;margin-top:7px;color:var(--muted);font-size:11px;font-weight:700}.area-tag{display:inline-block;padding:2px 9px;border-radius:999px;background:#eaf0f5;color:var(--navy);font-size:10px;font-weight:800}.area-tag.kansai{background:#ffe3e3;color:#9f1717}.area-tag.kyushu{background:#dcf7f8;color:#056e75}.area-tag.chugoku{background:#ffe0f2;color:#8d1f61}.area-tag.tokai,.area-tag.hokuriku{background:#fff1bf;color:#7d5b00}.area-tag.kanto{background:#fff9b7;color:#6a6000}.area-tag.okinawa{background:#e0f7f5;color:#176d67}.portal-news-block{margin-top:38px}.home-news-card{display:block;padding:23px;background:#fff;border:1px solid rgba(16,42,67,.07);border-radius:18px;box-shadow:var(--shadow)}.home-news-card h3{margin:12px 0 5px;color:var(--navy);font-size:20px}.home-news-card p{margin:0;color:var(--muted);font-size:13px}.notice-highlight{border-top:5px solid var(--gold)}.esc-preview{margin-top:24px}.inline-button{display:inline-block;margin-top:17px;padding:10px 16px;background:var(--navy);color:#fff;border-radius:10px;font-size:13px;font-weight:800}.article-note{margin-top:14px!important;padding:14px;background:var(--cream);border-radius:10px;line-height:1.8!important}.info-table{margin:0}.info-table>div{display:grid;grid-template-columns:130px 1fr;gap:15px;padding:13px 0;border-bottom:1px solid var(--line)}.info-table>div:last-child{border-bottom:0}.info-table dt{color:var(--muted);font-size:12px;font-weight:700}.info-table dd{margin:0;color:var(--navy);font-size:14px;font-weight:700}.link-actions{display:grid;gap:12px}.link-actions h2{margin-bottom:2px}.primary-link-button,.secondary-link-button{display:block;padding:15px 17px;border-radius:12px;text-align:center;font-size:14px;font-weight:800}.primary-link-button{background:var(--navy);color:#fff}.secondary-link-button{background:var(--gold);color:#fff}@media(max-width:520px){.portal-page{padding-top:22px}.portal-tabs{top:5px}.portal-tab{padding:13px 4px;font-size:13px}.event-card{grid-template-columns:50px 1fr;padding:14px 12px;gap:12px}.event-date{min-height:57px}.event-card h3{font-size:15px}.info-table>div{grid-template-columns:1fr;gap:3px}.info-table dt{font-size:11px}}
+
+/* お知らせの日付を見やすくする */
+.home-news-card .news-meta{
+  align-items:stretch;
+  gap:10px;
+  flex-wrap:wrap;
+}
+.home-news-card .news-meta time{
+  display:inline-flex;
+  align-items:center;
+  padding:7px 13px;
+  background:#eef3f7;
+  color:var(--navy);
+  border-radius:9px;
+  font-size:16px;
+  font-weight:900;
+  line-height:1.2;
+  letter-spacing:.02em;
+}
+.home-news-card .new-badge{
+  display:inline-flex;
+  align-items:center;
+  padding:7px 13px;
+  border-radius:9px;
+  font-size:14px;
+  line-height:1.2;
+}
+.news-row{
+  grid-template-columns:68px 1fr 18px;
+}
+.news-date{
+  display:flex;
+  min-height:68px;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  background:#eef3f7;
+  border-radius:12px;
+  border:1px solid rgba(16,42,67,.08);
+}
+.news-date strong{
+  font-size:31px;
+  font-weight:900;
+}
+.news-date span{
+  margin-top:5px;
+  color:var(--navy);
+  font-size:13px;
+  font-weight:800;
+}
+@media(max-width:460px){
+  .home-news-card .news-meta time{font-size:15px;padding:7px 11px}
+  .home-news-card .new-badge{font-size:13px;padding:7px 11px}
+  .news-row{grid-template-columns:62px 1fr 14px;gap:12px;padding:17px 14px}
+  .news-date{min-height:62px}
+  .news-date strong{font-size:28px}
+}
