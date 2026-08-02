@@ -1288,3 +1288,56 @@ body {
 /* ===== ESC取扱商材 ===== */
 @media(min-width:660px){.menu-grid-esc{grid-template-columns:1fr 1fr 1fr}}
 .product-list-grid{display:grid;gap:16px}.product-card{display:block;overflow:hidden;background:#fff;border:1px solid rgba(16,42,67,.08);border-radius:20px;box-shadow:var(--shadow);transition:transform .2s ease}.product-card:hover{transform:translateY(-3px)}.product-card-image{background:#0f0f12}.product-card-image img{display:block;width:100%;height:auto}.product-card-body{padding:20px 22px}.product-card-body h2{margin:10px 0 6px;color:var(--navy);font-size:28px;line-height:1.3}.product-card-body p{margin:0;color:var(--muted);font-size:14px;line-height:1.8}.large-product .read-more{margin-top:16px}.large-product .product-card-image img{max-height:520px;object-fit:cover}
+
+/* ===== 全ページ統一デザイン / トップ入口 ===== */
+:root{
+  --surface:#ffffff;
+  --surface-soft:#f1f4f7;
+  --radius-lg:22px;
+  --radius-md:16px;
+  --page-shadow:0 16px 44px rgba(16,42,67,.09);
+}
+.site-header,.sub-header{background:rgba(255,255,255,.97);border-top:5px solid var(--navy);border-bottom:1px solid var(--line)}
+.header-inner,.sub-header-inner{width:min(100% - 32px,820px);margin:auto;text-align:center}
+.header-inner{padding:27px 0 23px}.sub-header-inner{padding:18px 0 15px}
+.logo{width:min(350px,80vw);max-height:125px}.sub-logo{width:min(245px,66vw);max-height:85px}
+.container{width:min(100% - 28px,820px)}
+.page-heading,.article-card,.news-list,.meeting-schedule-card,.meeting-empty-card,.product-card,.home-news-card,.menu-card{border:1px solid rgba(16,42,67,.07)}
+.article-card,.news-list,.meeting-schedule-card,.meeting-empty-card,.product-card,.home-news-card,.menu-card{box-shadow:var(--page-shadow)}
+.article-card,.product-card{border-radius:var(--radius-lg)}
+.menu-card,.home-news-card,.meeting-schedule-card,.meeting-empty-card{border-radius:var(--radius-md)}
+.back-link{padding:7px 11px;background:var(--surface-soft);border-radius:999px}
+.primary-link-button,.secondary-link-button,.inline-button,.support-button{border-radius:12px;transition:transform .18s ease,box-shadow .18s ease}
+.primary-link-button:hover,.secondary-link-button:hover,.inline-button:hover,.support-button:hover{transform:translateY(-2px);box-shadow:0 9px 22px rgba(16,42,67,.16)}
+.site-footer{margin-top:0;padding:34px 20px}
+
+.portal-page{padding-top:28px}
+.portal-choice{min-height:50vh;display:grid;align-content:center;padding:20px 0 42px}
+.choice-kicker{margin:0 0 6px;color:var(--gold);font-size:11px;font-weight:900;letter-spacing:.18em;text-align:center}
+.portal-choice h1{margin:0 0 25px;color:var(--navy);font-size:clamp(29px,7vw,42px);line-height:1.25;text-align:center}
+.portal-choice-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.portal-choice-card{appearance:none;display:flex;min-height:245px;flex-direction:column;align-items:flex-start;padding:28px;border:0;border-radius:24px;color:#fff;text-align:left;font:inherit;cursor:pointer;box-shadow:0 20px 48px rgba(16,42,67,.18);transition:transform .22s ease,box-shadow .22s ease}
+.portal-choice-card:hover{transform:translateY(-5px);box-shadow:0 26px 58px rgba(16,42,67,.25)}
+.wolfe-choice{background:linear-gradient(145deg,#102a43,#1d4d73)}
+.esc-choice{background:linear-gradient(145deg,#9c6d16,#d2a544)}
+.choice-number{font-size:11px;font-weight:900;letter-spacing:.14em;opacity:.72}
+.choice-title{margin-top:24px;font-size:clamp(34px,7vw,48px);font-weight:900;letter-spacing:.04em;line-height:1}
+.choice-description{margin-top:14px;font-size:13px;line-height:1.7;opacity:.8}
+.choice-arrow{margin-top:auto;padding-top:25px;font-size:13px;font-weight:900}
+.portal-switcher{position:sticky;top:8px;z-index:20;display:grid;grid-template-columns:1fr 1fr auto;gap:7px;margin-bottom:25px;padding:6px;background:rgba(233,237,241,.96);border:1px solid rgba(16,42,67,.08);border-radius:15px;box-shadow:0 9px 25px rgba(16,42,67,.1);backdrop-filter:blur(10px)}
+.portal-switcher[hidden]{display:none}
+.portal-switch-button,.portal-switch-reset{appearance:none;border:0;border-radius:10px;font:inherit;font-weight:850;cursor:pointer}
+.portal-switch-button{padding:12px 8px;background:transparent;color:var(--muted)}
+.portal-switch-button.is-active{background:var(--navy);color:#fff;box-shadow:0 6px 15px rgba(16,42,67,.2)}
+.portal-switch-reset{padding:10px 12px;background:#fff;color:var(--navy);font-size:11px}
+.tab-panel{animation:fadePanel .25s ease}
+.portal-news-block{margin-top:0}
+
+@media(max-width:600px){
+  .portal-choice{min-height:43vh;padding-top:4px}
+  .portal-choice-grid{grid-template-columns:1fr;gap:12px}
+  .portal-choice-card{min-height:190px;padding:23px}
+  .choice-title{margin-top:16px}
+  .portal-switcher{grid-template-columns:1fr 1fr}.portal-switch-reset{grid-column:1/-1;padding:7px}
+  .header-inner{padding:23px 0 20px}
+}
