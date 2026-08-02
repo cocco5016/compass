@@ -1,115 +1,104 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="ja">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#102a43">
-  <title>Compass｜西濱SDグループ</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#102a43" name="theme-color"/>
+<title>Compass｜西濱SDグループ</title>
+<link href="style.css" rel="stylesheet"/>
 </head>
 <body>
-  <header class="site-header">
-    <div class="header-inner">
-      <a href="index.html"><img src="logo.png" alt="Compass 西濱SDグループ" class="logo"></a>
-      <p class="brand-message">迷わない、置いていかない。</p>
-      <p class="site-description">西濱SDグループ 情報サポートサイト</p>
-    </div>
-  </header>
-
-  <main class="container portal-page">
-    <section class="portal-intro">
-      <p class="eyebrow">INFORMATION PORTAL</p>
-      <h1>確認したい情報を選んでください</h1>
-      <p>WOLFEとESCの情報を、タブで分けて掲載しています。</p>
-    </section>
-
-    <div class="portal-tabs" role="tablist" aria-label="情報の種類">
-      <button class="portal-tab is-active" type="button" data-tab="wolfe" role="tab" aria-selected="true">WOLFEの情報</button>
-      <button class="portal-tab" type="button" data-tab="esc" role="tab" aria-selected="false">ESCの情報</button>
-    </div>
-
-    <section id="wolfe" class="tab-panel is-active" role="tabpanel">
-      <section class="portal-news-block">
-        <div class="section-heading"><div><p class="eyebrow">WOLFE NEWS</p><h2>WOLFEのお知らせ</h2></div></div>
-        <a href="article-wolfe-okinawa.html" class="home-news-card notice-highlight">
-          <div class="news-meta"><span class="new-badge">申込締切 8/7</span><time>8月9日開催</time></div>
-          <h3>沖縄研修会・福岡サテライトのご案内</h3>
-          <p>10:00〜12:00／志免町町民センター「学習室A」</p>
-          <span class="read-more">申込方法を確認する ›</span>
-        </a>
-      </section>
-
-      <div class="section-heading portal-section-heading wolfe-meeting-heading">
-        <div><p class="eyebrow">WOLFE MEETING</p><h2>福岡説明会前ミーティング</h2></div>
-        <span class="meeting-audience member-audience">福岡メンバー向け</span>
-      </div>
-
-      <article class="meeting-schedule-card wolfe-meeting-card">
-        <div class="meeting-date-box"><strong>8/3</strong><span>月</span></div>
-        <div class="meeting-card-body">
-          <p class="meeting-kicker">第1回 福岡説明会前MTG</p>
-          <h3>8月22日 福岡説明会に向けた事前ミーティング</h3>
-          <dl class="meeting-details">
-            <div><dt>時間</dt><dd>21:00〜22:00</dd></div>
-            <div><dt>形式</dt><dd>Zoom</dd></div>
-            <div><dt>ミーティングID</dt><dd>765 287 2467</dd></div>
-            <div><dt>パスコード</dt><dd>9999</dd></div>
-          </dl>
-          <p class="meeting-message">8月22日（土）の千葉社長最後の福岡説明会を、福岡一丸となって成功させるための事前ミーティングです。</p>
-          <a class="primary-link-button meeting-zoom-button" href="https://us06web.zoom.us/j/7652872467?pwd=QorTGFMZTbE6GYitERb6yLuP5hfvaC.1" target="_blank" rel="noopener">Zoomに参加する</a>
-        </div>
-      </article>
-
-      <div class="section-heading portal-section-heading">
-        <div><p class="eyebrow">AUGUST 2026</p><h2>8月説明会・研修予定</h2></div>
-        <span class="schedule-updated">7月27日版</span>
-      </div>
-
-      <div class="schedule-list">
-        <article class="event-card"><div class="event-date"><strong>1</strong><span>土</span></div><div><span class="area-tag kansai">大阪</span><h3>NLC新御堂ビル</h3><p>大阪市淀川区宮原5-1-24 601号室</p><small>スピーカー：千葉社長</small></div></article>
-        <article class="event-card"><div class="event-date"><strong>1</strong><span>土</span></div><div><span class="area-tag kyushu">鹿児島</span><h3>姶良市文化会館 加音ホール</h3><p>鹿児島県姶良市加治木町木田5348-185</p><small>スピーカー：椿</small></div></article>
-        <article class="event-card featured-event"><div class="event-date"><strong>2</strong><span>日</span></div><div><span class="area-tag tokai">静岡</span><h3>静岡ESC説明会</h3><p>静岡県コンベンションアーツセンター「グランシップ」<br>静岡市駿河区東静岡2-3-1</p><small>スピーカー：甲斐本部長／10:00〜12:00</small></div></article>
-        <article class="event-card"><div class="event-date"><strong>2</strong><span>日</span></div><div><span class="area-tag chugoku">広島</span><h3>RCC文化センター</h3><p>広島市中区橋本町5-11</p><small>スピーカー：千葉社長</small></div></article>
-        <article class="event-card"><div class="event-date"><strong>2</strong><span>日</span></div><div><span class="area-tag kyushu">宮崎</span><h3>都城市総合文化ホール</h3><p>宮崎県都城市北原町1106-100 ワークルーム</p><small>スピーカー：椿</small></div></article>
-        <article class="event-card"><div class="event-date"><strong>8</strong><span>土</span></div><div><span class="area-tag okinawa">沖縄</span><h3>浦添市産業振興センター 結の街</h3><p>沖縄県浦添市勢理客4-13-1</p><small>スピーカー：千葉社長</small></div></article>
-        <article class="event-card featured-event"><div class="event-date"><strong>9</strong><span>日</span></div><div><span class="area-tag okinawa">沖縄研修会</span><h3>レフ沖縄アリーナ</h3><p>沖縄県沖縄市諸見里1766 ベッセルホテル1F</p><small>サテライト研修会のみ</small></div></article>
-        <article class="event-card"><div class="event-date"><strong>9</strong><span>日</span></div><div><span class="area-tag kyushu">大牟田</span><h3>大牟田アリーナ</h3><p>大牟田市宝坂町2-92</p><small>スピーカー：甲斐本部長</small></div></article>
-        <article class="event-card"><div class="event-date"><strong>9</strong><span>日</span></div><div><span class="area-tag kyushu">大分</span><h3>クラサスドーム大分</h3><p>大分市横尾1351 B2F 204号</p><small>スピーカー：椿／会場決定</small></div></article>
-        <article class="event-card"><div class="event-date"><strong>11</strong><span>火</span></div><div><span class="area-tag hokuriku">石川</span><h3>石川県小松市團十郎芸術劇場うらら</h3><p>石川県小松市土居原町710</p><small>スピーカー：千葉社長</small></div></article>
-        <article class="event-card"><div class="event-date"><strong>16</strong><span>日</span></div><div><span class="area-tag kanto">東京</span><h3>ビジョンセンター市ヶ谷駅前</h3><p>東京都千代田区五番町4-2 東プレビル7F</p><small>スピーカー：千葉社長</small></div></article>
-        <article class="event-card"><div class="event-date"><strong>16</strong><span>日</span></div><div><span class="area-tag kyushu">佐世保</span><h3>佐世保市労働福祉センター</h3><p>佐世保市稲荷町2-28</p><small>スピーカー：椿</small></div></article>
-        <article class="event-card"><div class="event-date"><strong>22</strong><span>土</span></div><div><span class="area-tag kyushu">福岡</span><h3>福岡朝日ビル</h3><p>福岡市博多区博多駅前2-1-1 13・14号室</p><small>スピーカー：千葉社長</small></div></article>
-        <article class="event-card featured-event"><div class="event-date"><strong>23</strong><span>日</span></div><div><span class="area-tag kyushu">大牟田研修会</span><h3>大牟田エコサンクスセンター</h3><p>大牟田市健老町461 3階①②③</p><small>サテライト／10:00〜12:00</small></div></article>
-        <article class="event-card"><div class="event-date"><strong>23</strong><span>日</span></div><div><span class="area-tag kyushu">大牟田</span><h3>大牟田エコサンクスセンター</h3><p>大牟田市健老町461 3階①②③</p><small>千葉社長・甲斐本部長／コラボ説明会</small></div></article>
-        <article class="event-card"><div class="event-date"><strong>29</strong><span>土</span></div><div><span class="area-tag tokai">名古屋</span><h3>ウインクあいち</h3><p>名古屋市中村区名駅4-4-38 1104室</p><small>スピーカー：千葉社長</small></div></article>
-        <article class="event-card"><div class="event-date"><strong>30</strong><span>日</span></div><div><span class="area-tag kanto">東京</span><h3>ビジョンセンター市ヶ谷駅前</h3><p>東京都千代田区五番町4-2 東プレビル5F</p><small>スピーカー：千葉社長</small></div></article>
-        <article class="event-card"><div class="event-date"><strong>30</strong><span>日</span></div><div><span class="area-tag okinawa">沖縄</span><h3>沖縄コンベンションセンター B棟</h3><p>沖縄県宜野湾市真志喜4-3-1</p><small>スピーカー：甲斐本部長／会場変更</small></div></article>
-        <article class="event-card"><div class="event-date"><strong>30</strong><span>日</span></div><div><span class="area-tag kyushu">大分</span><h3>稙田公民館</h3><p>大分市玉沢789 大研修室</p><small>スピーカー：椿／会場決定</small></div></article>
-      </div>
-
-
-    </section>
-
-    <section id="esc" class="tab-panel" role="tabpanel" hidden>
-      <div class="section-heading portal-section-heading"><div><p class="eyebrow">ESC INFORMATION</p><h2>ESCの情報</h2></div></div>
-      <div class="menu-grid">
-        <a href="news.html" class="menu-card"><span class="menu-symbol">01</span><div><h3>お知らせ・各種資料</h3><p>議事録、登録案内、募集資料など</p></div><span class="arrow">›</span></a>
-        <a href="meetings.html" class="menu-card"><span class="menu-symbol">02</span><div><h3>ミーティング予定</h3><p>開催日時と対象者を確認</p></div><span class="arrow">›</span></a>
-      </div>
-      <section class="meeting-empty-card esc-preview">
-        <div class="meeting-preview-top">
-          <div><p class="eyebrow">NEXT SCHEDULE</p><h2>次回ミーティング予定</h2></div>
-          <span class="meeting-audience leader-audience">リーダー向け</span>
-        </div>
-        <p><strong>8月10日（月）21:00〜</strong><br>【teamK】甲斐SO組織｜責任者Zoom</p>
-        <a href="meetings.html" class="inline-button">詳細を確認する</a>
-      </section>
-    </section>
-  </main>
-
-  <footer class="site-footer"><img src="logo.png" alt="" class="footer-logo"><p>西濱SDグループ</p><small>© 2026 Compass</small></footer>
-
-  <script>
+<header class="site-header">
+<div class="header-inner">
+<a href="index.html"><img alt="Compass 西濱SDグループ" class="logo" src="logo.png"/></a>
+<p class="brand-message">迷わない、置いていかない。</p>
+<p class="site-description">西濱SDグループ 情報サポートサイト</p>
+</div>
+</header>
+<main class="container portal-page">
+<section class="portal-intro">
+<p class="eyebrow">INFORMATION PORTAL</p>
+<h1>確認したい情報を選んでください</h1>
+<p>WOLFEとESCの情報を、タブで分けて掲載しています。</p>
+</section>
+<div aria-label="情報の種類" class="portal-tabs" role="tablist">
+<button aria-selected="true" class="portal-tab is-active" data-tab="wolfe" role="tab" type="button">WOLFEの情報</button>
+<button aria-selected="false" class="portal-tab" data-tab="esc" role="tab" type="button">ESCの情報</button>
+</div>
+<section class="tab-panel is-active" id="wolfe" role="tabpanel">
+<section class="portal-news-block">
+<div class="section-heading"><div><p class="eyebrow">WOLFE NEWS</p><h2>WOLFEのお知らせ</h2></div></div>
+<a class="home-news-card notice-highlight" href="article-wolfe-okinawa.html">
+<div class="news-meta"><span class="new-badge">申込締切 8/7</span><time>8月9日開催</time></div>
+<h3>沖縄研修会・福岡サテライトのご案内</h3>
+<p>10:00〜12:00／志免町町民センター「学習室A」</p>
+<span class="read-more">申込方法を確認する ›</span>
+</a>
+</section>
+<div class="section-heading portal-section-heading wolfe-meeting-heading">
+<div><p class="eyebrow">WOLFE MEETING</p><h2>福岡説明会前ミーティング</h2></div>
+<span class="meeting-audience member-audience">福岡メンバー向け</span>
+</div>
+<article class="meeting-schedule-card wolfe-meeting-card" data-end-date="2026-08-03">
+<div class="meeting-date-box"><strong>8/3</strong><span>月</span></div>
+<div class="meeting-card-body">
+<p class="meeting-kicker">第1回 福岡説明会前MTG</p>
+<h3>8月22日 福岡説明会に向けた事前ミーティング</h3>
+<dl class="meeting-details">
+<div><dt>時間</dt><dd>21:00〜22:00</dd></div>
+<div><dt>形式</dt><dd>Zoom</dd></div>
+<div><dt>ミーティングID</dt><dd>765 287 2467</dd></div>
+<div><dt>パスコード</dt><dd>9999</dd></div>
+</dl>
+<p class="meeting-message">8月22日（土）の千葉社長最後の福岡説明会を、福岡一丸となって成功させるための事前ミーティングです。</p>
+<a class="primary-link-button meeting-zoom-button" href="https://us06web.zoom.us/j/7652872467?pwd=QorTGFMZTbE6GYitERb6yLuP5hfvaC.1" rel="noopener" target="_blank">Zoomに参加する</a>
+</div>
+</article>
+<div class="section-heading portal-section-heading">
+<div><p class="eyebrow">AUGUST 2026</p><h2>8月説明会・研修予定</h2></div>
+<span class="schedule-updated">8月予定</span>
+</div>
+<div class="schedule-list">
+<article class="event-card" data-end-date="2026-08-01"><div class="event-date"><strong>1</strong><span>土</span></div><div><span class="area-tag kansai">大阪</span><h3>NLC新御堂ビル</h3><p>大阪市淀川区宮原5-1-24 601号室</p><small>スピーカー：千葉社長</small></div></article>
+<article class="event-card" data-end-date="2026-08-01"><div class="event-date"><strong>1</strong><span>土</span></div><div><span class="area-tag kyushu">鹿児島</span><h3>姶良市文化会館 加音ホール</h3><p>鹿児島県姶良市加治木町木田5348-185</p><small>スピーカー：椿</small></div></article>
+<article class="event-card featured-event" data-end-date="2026-08-02"><div class="event-date"><strong>2</strong><span>日</span></div><div><span class="area-tag tokai">静岡</span><h3>静岡ESC説明会</h3><p>静岡県コンベンションアーツセンター「グランシップ」<br/>静岡市駿河区東静岡2-3-1</p><small>スピーカー：甲斐本部長／10:00〜12:00</small></div></article>
+<article class="event-card" data-end-date="2026-08-02"><div class="event-date"><strong>2</strong><span>日</span></div><div><span class="area-tag chugoku">広島</span><h3>RCC文化センター</h3><p>広島市中区橋本町5-11</p><small>スピーカー：千葉社長</small></div></article>
+<article class="event-card" data-end-date="2026-08-02"><div class="event-date"><strong>2</strong><span>日</span></div><div><span class="area-tag kyushu">宮崎</span><h3>都城市総合文化ホール</h3><p>宮崎県都城市北原町1106-100 ワークルーム</p><small>スピーカー：椿</small></div></article>
+<article class="event-card" data-end-date="2026-08-08"><div class="event-date"><strong>8</strong><span>土</span></div><div><span class="area-tag okinawa">沖縄</span><h3>浦添市産業振興センター 結の街</h3><p>沖縄県浦添市勢理客4-13-1</p><small>スピーカー：千葉社長</small></div></article>
+<article class="event-card featured-event" data-end-date="2026-08-09"><div class="event-date"><strong>9</strong><span>日</span></div><div><span class="area-tag okinawa">沖縄研修会</span><h3>レフ沖縄アリーナ</h3><p>沖縄県沖縄市諸見里1766 ベッセルホテル1F</p><small>サテライト研修会のみ</small></div></article>
+<article class="event-card" data-end-date="2026-08-09"><div class="event-date"><strong>9</strong><span>日</span></div><div><span class="area-tag kyushu">大牟田</span><h3>大牟田アリーナ</h3><p>大牟田市宝坂町2-92</p><small>スピーカー：甲斐本部長</small></div></article>
+<article class="event-card" data-end-date="2026-08-09"><div class="event-date"><strong>9</strong><span>日</span></div><div><span class="area-tag kyushu">大分</span><h3>クラサスドーム大分</h3><p>大分市横尾1351 B2F 204号</p><small>スピーカー：椿／会場決定</small></div></article>
+<article class="event-card" data-end-date="2026-08-11"><div class="event-date"><strong>11</strong><span>火</span></div><div><span class="area-tag hokuriku">石川</span><h3>石川県小松市團十郎芸術劇場うらら</h3><p>石川県小松市土居原町710</p><small>スピーカー：千葉社長</small></div></article>
+<article class="event-card" data-end-date="2026-08-16"><div class="event-date"><strong>16</strong><span>日</span></div><div><span class="area-tag kanto">東京</span><h3>ビジョンセンター市ヶ谷駅前</h3><p>東京都千代田区五番町4-2 東プレビル7F</p><small>スピーカー：千葉社長</small></div></article>
+<article class="event-card" data-end-date="2026-08-16"><div class="event-date"><strong>16</strong><span>日</span></div><div><span class="area-tag kyushu">佐世保</span><h3>佐世保市労働福祉センター</h3><p>佐世保市稲荷町2-28</p><small>スピーカー：椿</small></div></article>
+<article class="event-card" data-end-date="2026-08-22"><div class="event-date"><strong>22</strong><span>土</span></div><div><span class="area-tag kyushu">福岡</span><h3>福岡朝日ビル</h3><p>福岡市博多区博多駅前2-1-1 13・14号室</p><small>スピーカー：千葉社長</small></div></article>
+<article class="event-card featured-event" data-end-date="2026-08-23"><div class="event-date"><strong>23</strong><span>日</span></div><div><span class="area-tag kyushu">大牟田研修会</span><h3>大牟田エコサンクスセンター</h3><p>大牟田市健老町461 3階①②③</p><small>サテライト／10:00〜12:00</small></div></article>
+<article class="event-card" data-end-date="2026-08-23"><div class="event-date"><strong>23</strong><span>日</span></div><div><span class="area-tag kyushu">大牟田</span><h3>大牟田エコサンクスセンター</h3><p>大牟田市健老町461 3階①②③</p><small>千葉社長・甲斐本部長／コラボ説明会</small></div></article>
+<article class="event-card" data-end-date="2026-08-29"><div class="event-date"><strong>29</strong><span>土</span></div><div><span class="area-tag tokai">名古屋</span><h3>ウインクあいち</h3><p>名古屋市中村区名駅4-4-38 1104室</p><small>スピーカー：千葉社長</small></div></article>
+<article class="event-card" data-end-date="2026-08-30"><div class="event-date"><strong>30</strong><span>日</span></div><div><span class="area-tag kanto">東京</span><h3>ビジョンセンター市ヶ谷駅前</h3><p>東京都千代田区五番町4-2 東プレビル5F</p><small>スピーカー：千葉社長</small></div></article>
+<article class="event-card" data-end-date="2026-08-30"><div class="event-date"><strong>30</strong><span>日</span></div><div><span class="area-tag okinawa">沖縄</span><h3>沖縄コンベンションセンター B棟</h3><p>沖縄県宜野湾市真志喜4-3-1</p><small>スピーカー：甲斐本部長／会場変更</small></div></article>
+<article class="event-card" data-end-date="2026-08-30"><div class="event-date"><strong>30</strong><span>日</span></div><div><span class="area-tag kyushu">大分</span><h3>稙田公民館</h3><p>大分市玉沢789 大研修室</p><small>スピーカー：椿／会場決定</small></div></article>
+</div><p class="schedule-empty" hidden="" id="wolfe-schedule-empty">現在、掲載中の予定はありません。</p>
+</section>
+<section class="tab-panel" hidden="" id="esc" role="tabpanel">
+<div class="section-heading portal-section-heading"><div><p class="eyebrow">ESC INFORMATION</p><h2>ESCの情報</h2></div></div>
+<div class="menu-grid">
+<a class="menu-card" href="news.html"><span class="menu-symbol">01</span><div><h3>お知らせ・各種資料</h3><p>議事録、登録案内、募集資料など</p></div><span class="arrow">›</span></a>
+<a class="menu-card" href="meetings.html"><span class="menu-symbol">02</span><div><h3>ミーティング予定</h3><p>開催日時と対象者を確認</p></div><span class="arrow">›</span></a>
+</div>
+<section class="meeting-empty-card esc-preview" data-end-date="2026-08-10">
+<div class="meeting-preview-top">
+<div><p class="eyebrow">NEXT SCHEDULE</p><h2>次回ミーティング予定</h2></div>
+<span class="meeting-audience leader-audience">リーダー向け</span>
+</div>
+<p><strong>8月10日（月）21:00〜</strong><br/>【teamK】甲斐SO組織｜責任者Zoom</p>
+<a class="inline-button" href="meetings.html">詳細を確認する</a>
+</section>
+</section>
+</main>
+<footer class="site-footer"><img alt="" class="footer-logo" src="logo.png"/><p>西濱SDグループ</p><small>© 2026 Compass</small></footer>
+<script>
     const tabs = document.querySelectorAll('.portal-tab');
     const panels = document.querySelectorAll('.tab-panel');
     tabs.forEach(tab => tab.addEventListener('click', () => {
@@ -121,6 +110,19 @@
       panel.hidden = false;
       panel.classList.add('is-active');
     }));
-  </script>
+
+    // 終了日を過ぎた予定は自動的に非表示にする（日本時間基準）
+    const todayInJapan = new Intl.DateTimeFormat('en-CA', {
+      timeZone: 'Asia/Tokyo', year: 'numeric', month: '2-digit', day: '2-digit'
+    }).format(new Date());
+    document.querySelectorAll('[data-end-date]').forEach(item => {
+      if (item.dataset.endDate < todayInJapan) item.remove();
+    });
+    const scheduleList = document.querySelector('.schedule-list');
+    const scheduleEmpty = document.getElementById('wolfe-schedule-empty');
+    if (scheduleList && scheduleEmpty && !scheduleList.querySelector('.event-card')) {
+      scheduleEmpty.hidden = false;
+    }
+</script>
 </body>
 </html>

@@ -1,58 +1,64 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="ja">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#102a43">
-  <title>ミーティング予定｜Compass</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#102a43" name="theme-color"/>
+<title>ミーティング予定｜Compass</title>
+<link href="style.css" rel="stylesheet"/>
 </head>
 <body>
-  <header class="sub-header">
-    <div class="sub-header-inner">
-      <a href="index.html"><img src="logo.png" alt="Compass" class="sub-logo"></a>
-      <p>迷わない、置いていかない。</p>
-    </div>
-  </header>
-
-  <main class="container meeting-page">
-    <a href="index.html" class="back-link">← トップへ戻る</a>
-
-    <section class="page-heading">
-      <p class="eyebrow">MEETING SCHEDULE</p>
-      <h1>ミーティング予定</h1>
-      <p>各予定の対象者を、ラベルで確認してください。</p>
-    </section>
-
-    <div class="audience-guide">
-      <span class="meeting-audience leader-audience">リーダー向け</span>
-      <span class="meeting-audience member-audience">一般会員向け</span>
-    </div>
-
-    <article class="meeting-schedule-card leader-meeting-card">
-      <div class="meeting-date-box"><strong>8/10</strong><span>月</span></div>
-      <div class="meeting-card-body">
-        <div class="meeting-card-labels"><span class="meeting-audience leader-audience">リーダー向け</span></div>
-        <p class="meeting-kicker">【teamK】甲斐SO組織</p>
-        <h2>責任者Zoom</h2>
-        <dl class="meeting-details">
-          <div><dt>日時</dt><dd>8月10日（月）21:00〜</dd></div>
-          <div><dt>対象</dt><dd>SDおよび責任者</dd></div>
-          <div><dt>参加時</dt><dd>顔出し・フルネーム（漢字）</dd></div>
-        </dl>
-        <div class="meeting-note">
-          <strong>秘書の皆様へ</strong>
-          <p>出席者名簿は、当日の1時間前までにスプレッドシートへチェックをお願いします。</p>
-        </div>
-        <a class="primary-link-button meeting-zoom-button" href="https://us06web.zoom.us/j/86547346537" target="_blank" rel="noopener">Zoomに参加する</a>
-      </div>
-    </article>
-  </main>
-
-  <footer class="site-footer">
-    <img src="logo.png" alt="" class="footer-logo">
-    <p>西濱SDグループ</p>
-    <small>© 2026 Compass</small>
-  </footer>
-</body>
+<header class="sub-header">
+<div class="sub-header-inner">
+<a href="index.html"><img alt="Compass" class="sub-logo" src="logo.png"/></a>
+<p>迷わない、置いていかない。</p>
+</div>
+</header>
+<main class="container meeting-page">
+<a class="back-link" href="index.html">← トップへ戻る</a>
+<section class="page-heading">
+<p class="eyebrow">MEETING SCHEDULE</p>
+<h1>ミーティング予定</h1>
+<p>各予定の対象者を、ラベルで確認してください。</p>
+</section>
+<div class="audience-guide">
+<span class="meeting-audience leader-audience">リーダー向け</span>
+<span class="meeting-audience member-audience">一般会員向け</span>
+</div>
+<article class="meeting-schedule-card leader-meeting-card" data-end-date="2026-08-10">
+<div class="meeting-date-box"><strong>8/10</strong><span>月</span></div>
+<div class="meeting-card-body">
+<div class="meeting-card-labels"><span class="meeting-audience leader-audience">リーダー向け</span></div>
+<p class="meeting-kicker">【teamK】甲斐SO組織</p>
+<h2>責任者Zoom</h2>
+<dl class="meeting-details">
+<div><dt>日時</dt><dd>8月10日（月）21:00〜</dd></div>
+<div><dt>対象</dt><dd>SDおよび責任者</dd></div>
+<div><dt>参加時</dt><dd>顔出し・フルネーム（漢字）</dd></div>
+</dl>
+<div class="meeting-note">
+<strong>秘書の皆様へ</strong>
+<p>出席者名簿は、当日の1時間前までにスプレッドシートへチェックをお願いします。</p>
+</div>
+<a class="primary-link-button meeting-zoom-button" href="https://us06web.zoom.us/j/86547346537" rel="noopener" target="_blank">Zoomに参加する</a>
+</div>
+</article>
+<section class="meeting-empty-card" hidden="" id="meeting-empty"><p class="eyebrow">SCHEDULE</p><h2>現在、掲載中のミーティングはありません</h2><p>新しい予定が決まり次第、こちらに掲載します。</p></section></main>
+<footer class="site-footer">
+<img alt="" class="footer-logo" src="logo.png"/>
+<p>西濱SDグループ</p>
+<small>© 2026 Compass</small>
+</footer>
+<script>
+  const todayInJapan = new Intl.DateTimeFormat('en-CA', {
+    timeZone: 'Asia/Tokyo', year: 'numeric', month: '2-digit', day: '2-digit'
+  }).format(new Date());
+  document.querySelectorAll('[data-end-date]').forEach(item => {
+    if (item.dataset.endDate < todayInJapan) item.remove();
+  });
+  if (!document.querySelector('.meeting-schedule-card')) {
+    document.getElementById('meeting-empty').hidden = false;
+  }
+</script></body>
 </html>
