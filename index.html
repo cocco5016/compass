@@ -17,30 +17,30 @@
 </div>
 </header>
 <main class="container portal-page">
-<section class="portal-choice" id="portal-choice" aria-labelledby="portal-choice-title">
-  <p class="choice-kicker">SELECT INFORMATION</p>
-  <h1 id="portal-choice-title">WOLFE または ESC</h1>
-  <div class="portal-choice-grid">
-    <button class="portal-choice-card wolfe-choice" data-open-tab="wolfe" type="button">
-      <span class="choice-number">01</span>
-      <span class="choice-title">WOLFE</span>
-      <span class="choice-description">説明会・研修・WOLFEのお知らせ</span>
-      <span class="choice-arrow">選択する →</span>
-    </button>
-    <button class="portal-choice-card esc-choice" data-open-tab="esc" type="button">
-      <span class="choice-number">02</span>
-      <span class="choice-title">ESC</span>
-      <span class="choice-description">お知らせ・ミーティング・取扱商材</span>
-      <span class="choice-arrow">選択する →</span>
-    </button>
-  </div>
+<section class="portal-intro">
+<p class="eyebrow">INFORMATION PORTAL</p>
+<h1>確認したい情報を選んでください</h1>
+<p>WOLFEとESCの情報を、タブで分けて掲載しています。まずは気になるカテゴリを開いて、最新のお知らせと予定をすぐ確認できます。</p>
 </section>
-<div class="portal-switcher" id="portal-switcher" hidden>
-  <button class="portal-switch-button" data-open-tab="wolfe" type="button">WOLFE</button>
-  <button class="portal-switch-button" data-open-tab="esc" type="button">ESC</button>
-  <button class="portal-switch-reset" id="portal-reset" type="button">選び直す</button>
+<section class="portal-quick-guide" aria-label="おすすめの確認ポイント">
+<a class="quick-guide-card quick-guide-primary" href="article-wolfe-okinawa.html">
+<span class="quick-guide-label">おすすめ</span>
+<h2>直近で確認したい案内を見る</h2>
+<p>申込締切や開催間近の情報を、最初にチェックできます。</p>
+<span class="quick-guide-link">沖縄研修会・福岡サテライトの案内へ</span>
+</a>
+<a class="quick-guide-card" href="meetings.html">
+<span class="quick-guide-label">よく使う</span>
+<h2>ミーティング予定をまとめて確認</h2>
+<p>次回予定や対象者を、一覧ですぐ見返せます。</p>
+<span class="quick-guide-link">ミーティング予定へ</span>
+</a>
+</section>
+<div aria-label="情報の種類" class="portal-tabs" role="tablist">
+<button aria-selected="true" class="portal-tab is-active" data-tab="wolfe" role="tab" type="button">WOLFEの情報</button>
+<button aria-selected="false" class="portal-tab" data-tab="esc" role="tab" type="button">ESCの情報</button>
 </div>
-<section class="tab-panel" hidden id="wolfe" role="tabpanel">
+<section class="tab-panel is-active" id="wolfe" role="tabpanel">
 <section class="portal-news-block">
 <div class="section-heading"><div><p class="eyebrow">WOLFE NEWS</p><h2>WOLFEのお知らせ</h2></div></div>
 <div class="home-news-grid">
@@ -104,36 +104,17 @@
 </main>
 <footer class="site-footer"><img alt="" class="footer-logo" src="logo.png"/><p>西濱SDグループ</p><small>© 2026 Compass</small></footer>
 <script>
+    const tabs = document.querySelectorAll('.portal-tab');
     const panels = document.querySelectorAll('.tab-panel');
-    const choice = document.getElementById('portal-choice');
-    const switcher = document.getElementById('portal-switcher');
-    const openButtons = document.querySelectorAll('[data-open-tab]');
-    const switchButtons = document.querySelectorAll('.portal-switch-button');
-
-    function openPortal(tabId) {
-      panels.forEach(panel => {
-        const active = panel.id === tabId;
-        panel.hidden = !active;
-        panel.classList.toggle('is-active', active);
-      });
-      switchButtons.forEach(button => {
-        button.classList.toggle('is-active', button.dataset.openTab === tabId);
-      });
-      choice.hidden = true;
-      switcher.hidden = false;
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-
-    openButtons.forEach(button => {
-      button.addEventListener('click', () => openPortal(button.dataset.openTab));
-    });
-
-    document.getElementById('portal-reset').addEventListener('click', () => {
-      panels.forEach(panel => { panel.hidden = true; panel.classList.remove('is-active'); });
-      switcher.hidden = true;
-      choice.hidden = false;
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
+    tabs.forEach(tab => tab.addEventListener('click', () => {
+      tabs.forEach(item => { item.classList.remove('is-active'); item.setAttribute('aria-selected','false'); });
+      panels.forEach(panel => { panel.classList.remove('is-active'); panel.hidden = true; });
+      tab.classList.add('is-active');
+      tab.setAttribute('aria-selected','true');
+      const panel = document.getElementById(tab.dataset.tab);
+      panel.hidden = false;
+      panel.classList.add('is-active');
+    }));
 
     // 終了日を過ぎた予定は自動的に非表示にする（日本時間基準）
     const todayInJapan = new Intl.DateTimeFormat('en-CA', {
